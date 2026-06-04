@@ -41,17 +41,10 @@ jobs:
 
       - name: Serve Documentation
         run: |
-          # 1. Start the dbt docs web server in the background using '&'
-          dbt docs serve --port 8080 &
-          
-          # 2. Capture the background process ID (PID)
+          dbt docs serve --port 8080 &          
           SERVER_PID=$!
           
-          # 3. Give the web server 5 seconds to boot up in the cloud runner
+          # Sleep, ping and kill to finish pipeline
           sleep 5
-          
-          # 4. Ping the local server with a curl request to prove it's actively serving documentation
-          curl -I http://localhost:8080
-          
-          # 5. Gracefully kill the background process so GitHub Actions can finish successfully
+          curl -I http://localhost:8080          
           kill $SERVER_PID
