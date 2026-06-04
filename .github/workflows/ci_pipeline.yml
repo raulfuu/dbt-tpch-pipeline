@@ -30,14 +30,26 @@ jobs:
       - name: Install dbt-snowflake
         run: pip install dbt-snowflake
 
+      # Download current production branch into a temporary folder
+      - name: Checkout Production (Main) Branch
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          path: prod_code_baseline
+
+      # Compile production code to create the comparison manifest
+      - name: Build Production Comparison State
+        run: |
+          cd prod_code_baseline
+          dbt deps
+          dbt compile --profiles-dir ..
+          cd ..
+
       - name: Install dbt Packages
         run: dbt deps
 
-      - name: Compile Code
-        run: dbt compile --profiles-dir .
-        
       - name: Run Modified Models Only
-        run: dbt run --select state:modified --profiles-dir .
+        run: dbt run --select state:modified --state prod_code_baseline/target --profiles-dir .
 
       - name: Enforce Standards (dbt-project-evaluator)
         run: dbt run --select package:dbt_project_evaluator --profiles-dir .
