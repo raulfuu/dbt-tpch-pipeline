@@ -35,11 +35,11 @@ jobs:
       - name: Install Packages
         run: dbt deps
 
-      - name: Run Snapshots
-        run: dbt snapshot --profiles-dir .
-
       - name: Build Staging Layer
         run: dbt run --select "stg_*" --profiles-dir .
+        
+      - name: Run Snapshots
+        run: dbt snapshot --profiles-dir .
 
   # ==========================================
   # JOB 2: INTERMEDIATE LAYER
