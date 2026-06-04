@@ -1,0 +1,5 @@
+packages:
+  - package: dbt-labs/dbt_project_evaluator
+    version: 0.12.0 
+  - package: elementary-data/elementary
+    version: 0.16.0

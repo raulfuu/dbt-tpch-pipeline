@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: tpch
+    description: "Raw TPC-H benchmark dataset from the Snowflake sample data share."
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: customer
+        description: "Customer profile data, including account balances and market segments."
+      - name: orders
+        description: "Order header records. Represents a single purchase transaction placed by a customer."
+      - name: lineitem
+        description: "Order detail records. Represents individual items purchased within an order. Lowest granularity of sales."
+      - name: part
+        description: "Master catalog of products/parts available."
+      - name: supplier
+        description: "Vendor and supplier profile data."
+      - name: nation
+        description: "Country lookup table mapping customers and suppliers to their respective nations."
+      - name: region
+        description: "Continental region lookup table mapping nations to broader geographic areas."
+      - name: partsupp
+        description: "Junction table defining the relationship and supply costs between parts and suppliers."

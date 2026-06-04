@@ -1,0 +1,18 @@
+version: 2
+
+snapshots:
+  - name: scd_customer
+    description: "SCD Type 2 Snapshot tracking historical changes to customers."
+    columns:
+      - name: customer_id
+        description: "Primary key."
+  - name: scd_part
+    description: "SCD Type 2 Snapshot tracking historical changes to parts."
+    columns:
+      - name: part_id
+        description: "Primary key."
+  - name: scd_supplier
+    description: "SCD Type 2 Snapshot tracking historical changes to suppliers."
+    columns:
+      - name: supplier_id
+        description: "Primary key."

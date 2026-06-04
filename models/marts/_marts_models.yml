@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Type 1 Dimension for customer data. Denormalized to include nation and region details."
+    columns:
+      - name: customer_id
+        description: "Primary key for the customer."
+      - name: customer_name
+        description: "Full name of the customer."
+      - name: customer_address
+        description: "Physical address."
+      - name: phone_number
+        description: "Contact number."
+      - name: account_balance
+        description: "Current account balance of the customer."
+      - name: market_segment
+        description: "Assigned market segment."
+      - name: nation_name
+        description: "Customer's nation."
+      - name: region_name
+        description: "Customer's region."
+
+  - name: dim_suppliers
+    description: "Type 1 Dimension for supplier data."
+    columns:
+      - name: supplier_id
+        description: "Primary key for the supplier."
+      - name: supplier_name
+        description: "Registered name of the supplier."
+      - name: supplier_address
+        description: "Physical address."
+      - name: phone_number
+        description: "Contact number."
+      - name: account_balance
+        description: "Current account balance."
+      - name: nation_name
+        description: "Supplier's nation."
+      - name: region_name
+        description: "Supplier's region."
+
+  - name: dim_parts
+    description: "Type 1 Dimension for the master product catalog."
+    columns:
+      - name: part_id
+        description: "Primary key for the part."
+      - name: part_name
+        description: "Name of the part."
+      - name: manufacturer
+        description: "Manufacturer name."
+      - name: brand
+        description: "Brand category."
+      - name: part_type
+        description: "Physical type description."
+      - name: part_size
+        description: "Size metric."
+      - name: container
+        description: "Packaging type."
+      - name: retail_price
+        description: "Standard retail price."
+
+  - name: fct_sales
+    description: "Core sales fact table at the line-item grain."
+    columns:
+      - name: order_id
+        description: "Foreign key joining to order."
+      - name: customer_id
+        description: "Foreign key joining to customer."
+      - name: part_id
+        description: "Foreign key joining to part."
+      - name: supplier_id
+        description: "Foreign key joining to supplier."
+      - name: order_date
+        description: "Date the order was placed."
+      - name: order_status
+        description: "Overall fulfillment status."
+      - name: total_line_items
+        description: "Count of raw lines rolled up."
+      - name: total_quantity
+        description: "Total physical units sold."
+      - name: gross_amount
+        description: "Baseline revenue before discounts/taxes."
+      - name: discounted_amount
+        description: "Revenue after discounts."
+      - name: net_amount_with_tax
+        description: "Final recognized revenue after discounts and taxes."

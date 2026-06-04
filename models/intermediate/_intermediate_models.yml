@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: int_customers_with_geo
+    description: "Ephemeral model denormalizing geography directly into customer records."
+    columns:
+      - name: customer_id
+        description: "Primary key for customer."
+      - name: customer_name
+        description: "Name of the customer."
+      - name: customer_address
+        description: "Physical address of the customer."
+      - name: phone_number
+        description: "Customer contact phone number."
+      - name: account_balance
+        description: "Current account balance."
+      - name: market_segment
+        description: "Market segment the customer belongs to."
+      - name: nation_name
+        description: "Resolved text name of the nation."
+      - name: region_name
+        description: "Resolved text name of the region."
+
+  - name: int_suppliers_with_geo
+    description: "Ephemeral model denormalizing geography directly into supplier records."
+    columns:
+      - name: supplier_id
+        description: "Primary key for supplier."
+      - name: supplier_name
+        description: "Name of the supplier."
+      - name: supplier_address
+        description: "Physical address of the supplier."
+      - name: phone_number
+        description: "Supplier contact phone number."
+      - name: account_balance
+        description: "Current account balance."
+      - name: nation_name
+        description: "Resolved text name of the nation."
+      - name: region_name
+        description: "Resolved text name of the region."
+
+  - name: int_sales_prep
+    description: "Ephemeral model joining order headers with line items to prepare fact table grain."
+    columns:
+      - name: order_id
+        description: "Foreign key to the order."
+      - name: part_id
+        description: "Foreign key to the part."
+      - name: supplier_id
+        description: "Foreign key to the supplier."
+      - name: line_number
+        description: "Line number within the order."
+      - name: quantity
+        description: "Physical quantity ordered."
+      - name: extended_price
+        description: "Base revenue amount."
+      - name: discount
+        description: "Discount percentage applied."
+      - name: tax
+        description: "Tax percentage applied."
+      - name: return_flag
+        description: "Indicates if the item was returned."
+      - name: line_status
+        description: "Status of the specific line item."
+      - name: ship_date
+        description: "Date the item shipped."
+      - name: commit_date
+        description: "Date committed to customer."
+      - name: receipt_date
+        description: "Date received by customer."
+      - name: ship_instructions
+        description: "Specific shipping instructions."
+      - name: ship_mode
+        description: "Mode of transportation."
+      - name: customer_id
+        description: "Foreign key to the customer who placed the order."
+      - name: order_status
+        description: "Overall status of the order."
+      - name: order_date
+        description: "Date the order was placed."
+      - name: order_priority
+        description: "Fulfillment priority level."
+      - name: clerk_name
+        description: "Sales clerk who processed the order."
+      - name: ship_priority
+        description: "Shipping priority."

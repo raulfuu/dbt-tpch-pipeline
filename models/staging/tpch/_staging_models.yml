@@ -1,0 +1,156 @@
+version: 2
+
+models:
+  - name: stg_tpch__region
+    description: "Staging model for TPC-H region data."
+    columns:
+      - name: region_id
+        description: "Primary key for region."
+      - name: region_name
+        description: "Text name of the region."
+      - name: comment
+        description: "Standard TPC-H comment field."
+
+  - name: stg_tpch__nation
+    description: "Staging model for TPC-H nation data."
+    columns:
+      - name: nation_id
+        description: "Primary key for nation."
+      - name: nation_name
+        description: "Text name of the nation."
+      - name: region_id
+        description: "Foreign key joining to region."
+      - name: comment
+        description: "Standard TPC-H comment field."
+
+  - name: stg_tpch__supplier
+    description: "Staging model for TPC-H supplier data."
+    columns:
+      - name: supplier_id
+        description: "Primary key for supplier."
+      - name: supplier_name
+        description: "Name of the supplier."
+      - name: supplier_address
+        description: "Physical address of the supplier."
+      - name: nation_id
+        description: "Foreign key joining to nation."
+      - name: phone_number
+        description: "Supplier contact phone number."
+      - name: account_balance
+        description: "Current account balance."
+      - name: comment
+        description: "Standard TPC-H comment field."
+
+  - name: stg_tpch__part
+    description: "Staging model for TPC-H part (product) catalog."
+    columns:
+      - name: part_id
+        description: "Primary key for part."
+      - name: part_name
+        description: "Name of the part."
+      - name: manufacturer
+        description: "Manufacturer of the part."
+      - name: brand
+        description: "Brand of the part."
+      - name: part_type
+        description: "Physical type description."
+      - name: part_size
+        description: "Size of the part."
+      - name: container
+        description: "Packaging container type."
+      - name: retail_price
+        description: "Standard MSRP."
+      - name: comment
+        description: "Standard TPC-H comment field."
+
+  - name: stg_tpch__partsupp
+    description: "Staging model resolving the many-to-many relationship between parts and suppliers."
+    columns:
+      - name: part_id
+        description: "Foreign key to part."
+      - name: supplier_id
+        description: "Foreign key to supplier."
+      - name: available_quantity
+        description: "Quantity available from this specific supplier."
+      - name: supply_cost
+        description: "Cost to acquire from this supplier."
+      - name: comment
+        description: "Standard TPC-H comment field."
+
+  - name: stg_tpch__customer
+    description: "Staging model for TPC-H customer data."
+    columns:
+      - name: customer_id
+        description: "Primary key for customer."
+      - name: customer_name
+        description: "Name of the customer."
+      - name: customer_address
+        description: "Physical address of the customer."
+      - name: nation_id
+        description: "Foreign key joining to nation."
+      - name: phone_number
+        description: "Customer contact phone number."
+      - name: account_balance
+        description: "Current account balance."
+      - name: market_segment
+        description: "Market segment the customer belongs to."
+      - name: comment
+        description: "Standard TPC-H comment field."
+
+  - name: stg_tpch__orders
+    description: "Staging model for TPC-H order headers."
+    columns:
+      - name: order_id
+        description: "Primary key for the order."
+      - name: customer_id
+        description: "Foreign key to customer."
+      - name: order_status
+        description: "Current fulfillment status."
+      - name: total_price
+        description: "Total order value."
+      - name: order_date
+        description: "Date the order was placed."
+      - name: order_priority
+        description: "Fulfillment priority level."
+      - name: clerk_name
+        description: "Sales clerk who processed the order."
+      - name: ship_priority
+        description: "Shipping priority."
+      - name: comment
+        description: "Standard TPC-H comment field."
+
+  - name: stg_tpch__lineitem
+    description: "Staging model for TPC-H line items (the lowest transactional grain)."
+    columns:
+      - name: order_id
+        description: "Foreign key to order."
+      - name: part_id
+        description: "Foreign key to part."
+      - name: supplier_id
+        description: "Foreign key to supplier."
+      - name: line_number
+        description: "Line number within the order."
+      - name: quantity
+        description: "Physical quantity ordered."
+      - name: extended_price
+        description: "Base revenue amount."
+      - name: discount
+        description: "Discount percentage applied."
+      - name: tax
+        description: "Tax percentage applied."
+      - name: return_flag
+        description: "Indicates if the item was returned."
+      - name: line_status
+        description: "Status of the specific line item."
+      - name: ship_date
+        description: "Date the item shipped."
+      - name: commit_date
+        description: "Date committed to customer."
+      - name: receipt_date
+        description: "Date received by customer."
+      - name: ship_instructions
+        description: "Specific shipping instructions."
+      - name: ship_mode
+        description: "Mode of transportation."
+      - name: comment
+        description: "Standard TPC-H comment field."
