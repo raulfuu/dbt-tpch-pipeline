@@ -3,12 +3,12 @@
 {{
     config(
       target_schema='snapshots',
-      unique_key='part_id',
+      unique_key='p_partkey',
       strategy='check',
       check_cols='all'
     )
 }}
 
-select * from {{ ref('stg_tpch__part') }}
+select * from {{ source('tpch_sf1', 'part') }}
 
 {% endsnapshot %}

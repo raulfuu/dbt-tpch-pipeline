@@ -3,12 +3,12 @@
 {{
     config(
       target_schema='snapshots',
-      unique_key='supplier_id',
+      unique_key='s_suppkey',
       strategy='check',
       check_cols='all'
     )
 }}
 
-select * from {{ ref('stg_tpch__supplier') }}
+select * from {{ source('tpch_sf1', 'supplier') }}
 
 {% endsnapshot %}
