@@ -9,6 +9,6 @@
     )
 }}
 
-select * from {{ source('tpch_sf1', 'supplier') }}
+select * from {{ source('tpch', 'supplier') }}
 
 {% endsnapshot %}
