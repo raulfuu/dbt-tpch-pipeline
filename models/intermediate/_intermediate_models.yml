@@ -96,3 +96,5 @@ models:
         description: "Sales clerk who processed the order."
       - name: ship_priority
         description: "Shipping priority."
+      - name: supply_cost
+        description: "Cost to supply the item, brought in from partsupp for profitability analysis."

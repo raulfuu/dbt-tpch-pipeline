@@ -110,3 +110,7 @@ models:
         description: "Revenue after discounts."
       - name: net_amount_with_tax
         description: "Final recognized revenue after discounts and taxes."
+      - name: total_cost
+        description: "Total cost of goods sold based on supply cost."
+      - name: net_profit
+        description: "Calculated profit as net revenue minus total cost."

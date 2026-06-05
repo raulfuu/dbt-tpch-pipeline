@@ -10,6 +10,10 @@ orders as (
     select * from {{ ref('stg_tpch__orders') }}
 ),
 
+partsupp as (
+    select * from {{ ref('stg_tpch__partsupp') }}
+),
+
 joined as (
     select
         li.order_id,
@@ -33,10 +37,14 @@ joined as (
         o.order_date,
         o.order_priority,
         o.clerk_name,
-        o.ship_priority
+        o.ship_priority,
+        ps.supply_cost
     from lineitem li
     left join orders o
         on li.order_id = o.order_id
+    left join partsupp ps
+        on li.part_id = ps.part_id 
+        and li.supplier_id = ps.supplier_id
 )
 
 select * from joined

@@ -23,9 +23,13 @@ final as (
         sum(quantity) as total_quantity,
         sum(extended_price) as gross_amount,
         
-        -- Actual revenue after discounts and taxes
+        -- Revenue metrics
         sum(extended_price * (1 - discount)) as discounted_amount,
-        sum(extended_price * (1 - discount) * (1 + tax)) as net_amount_with_tax
+        sum(extended_price * (1 - discount) * (1 + tax)) as net_amount_with_tax,
+        
+        -- Cost and Profitability metrics
+        sum(quantity * supply_cost) as total_cost,
+        sum(extended_price * (1 - discount) * (1 + tax)) - sum(quantity * supply_cost) as net_profit
         
     from sales_prep
     group by 
