@@ -6,6 +6,9 @@ models:
     columns:
       - name: region_id
         description: "Primary key for region."
+        tests:
+          - unique
+          - not_null
       - name: region_name
         description: "Text name of the region."
       - name: comment
@@ -16,10 +19,18 @@ models:
     columns:
       - name: nation_id
         description: "Primary key for nation."
+        tests:
+          - unique
+          - not_null
       - name: nation_name
         description: "Text name of the nation."
       - name: region_id
         description: "Foreign key joining to region."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch__region')
+              field: region_id
       - name: comment
         description: "Standard TPC-H comment field."
 
@@ -28,12 +39,20 @@ models:
     columns:
       - name: supplier_id
         description: "Primary key for supplier."
+        tests:
+          - unique
+          - not_null
       - name: supplier_name
         description: "Name of the supplier."
       - name: supplier_address
         description: "Physical address of the supplier."
       - name: nation_id
         description: "Foreign key joining to nation."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch__nation')
+              field: nation_id
       - name: phone_number
         description: "Supplier contact phone number."
       - name: account_balance
@@ -46,6 +65,9 @@ models:
     columns:
       - name: part_id
         description: "Primary key for part."
+        tests:
+          - unique
+          - not_null
       - name: part_name
         description: "Name of the part."
       - name: manufacturer
@@ -68,8 +90,18 @@ models:
     columns:
       - name: part_id
         description: "Foreign key to part."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch__part')
+              field: part_id
       - name: supplier_id
         description: "Foreign key to supplier."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch__supplier')
+              field: supplier_id
       - name: available_quantity
         description: "Quantity available from this specific supplier."
       - name: supply_cost
@@ -82,12 +114,20 @@ models:
     columns:
       - name: customer_id
         description: "Primary key for customer."
+        tests:
+          - unique
+          - not_null
       - name: customer_name
         description: "Name of the customer."
       - name: customer_address
         description: "Physical address of the customer."
       - name: nation_id
         description: "Foreign key joining to nation."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch__nation')
+              field: nation_id
       - name: phone_number
         description: "Customer contact phone number."
       - name: account_balance
@@ -102,8 +142,16 @@ models:
     columns:
       - name: order_id
         description: "Primary key for the order."
+        tests:
+          - unique
+          - not_null
       - name: customer_id
         description: "Foreign key to customer."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch__customer')
+              field: customer_id
       - name: order_status
         description: "Current fulfillment status."
       - name: total_price
@@ -124,12 +172,29 @@ models:
     columns:
       - name: order_id
         description: "Foreign key to order."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch__orders')
+              field: order_id
       - name: part_id
         description: "Foreign key to part."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch__part')
+              field: part_id
       - name: supplier_id
         description: "Foreign key to supplier."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_tpch__supplier')
+              field: supplier_id
       - name: line_number
         description: "Line number within the order."
+        tests:
+          - not_null
       - name: quantity
         description: "Physical quantity ordered."
       - name: extended_price

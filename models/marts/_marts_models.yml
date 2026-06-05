@@ -6,6 +6,9 @@ models:
     columns:
       - name: customer_id
         description: "Primary key for the customer."
+        tests:
+          - unique
+          - not_null
       - name: customer_name
         description: "Full name of the customer."
       - name: customer_address
@@ -26,6 +29,9 @@ models:
     columns:
       - name: supplier_id
         description: "Primary key for the supplier."
+        tests:
+          - unique
+          - not_null
       - name: supplier_name
         description: "Registered name of the supplier."
       - name: supplier_address
@@ -44,6 +50,9 @@ models:
     columns:
       - name: part_id
         description: "Primary key for the part."
+        tests:
+          - unique
+          - not_null
       - name: part_name
         description: "Name of the part."
       - name: manufacturer
@@ -64,12 +73,29 @@ models:
     columns:
       - name: order_id
         description: "Foreign key joining to order."
+        tests:
+          - not_null
       - name: customer_id
         description: "Foreign key joining to customer."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
       - name: part_id
         description: "Foreign key joining to part."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_parts')
+              field: part_id
       - name: supplier_id
         description: "Foreign key joining to supplier."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_suppliers')
+              field: supplier_id
       - name: order_date
         description: "Date the order was placed."
       - name: order_status
