@@ -1,5 +1,17 @@
+{{
+    config(
+        materialized='incremental',
+        unique_key=['order_id', 'line_number']
+    )
+}}
+
 with source as (
     select * from {{ source('tpch', 'lineitem') }}
+    
+    {% if is_incremental() %}
+    -- Dynamically filter for only new or updated rows using the target table's max date
+    where l_shipdate >= (select max(ship_date) from {{ this }})
+    {% endif %}
 ),
 
 renamed as (
@@ -20,7 +32,6 @@ renamed as (
         l_shipinstruct as ship_instructions,
         l_shipmode as ship_mode,
         l_comment as comment
-
     from source
 )
 

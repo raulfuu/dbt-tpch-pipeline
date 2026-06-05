@@ -1,5 +1,17 @@
+{{
+    config(
+        materialized='incremental',
+        unique_key='order_id'
+    )
+}}
+
 with source as (
     select * from {{ source('tpch', 'orders') }}
+    
+    {% if is_incremental() %}
+    -- Dynamically filter for only new or updated orders
+    where o_orderdate >= (select max(order_date) from {{ this }})
+    {% endif %}
 ),
 
 renamed as (
@@ -13,7 +25,6 @@ renamed as (
         o_clerk as clerk_name,
         o_shippriority as ship_priority,
         o_comment as comment
-
     from source
 )
 
