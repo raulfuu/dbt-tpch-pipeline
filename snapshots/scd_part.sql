@@ -2,7 +2,6 @@
 
 {{
     config(
-      target_schema='snapshots',
       unique_key='p_partkey',
       strategy='check',
       check_cols='all'

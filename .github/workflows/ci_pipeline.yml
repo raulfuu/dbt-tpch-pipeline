@@ -34,10 +34,10 @@ jobs:
         run: dbt deps
 
       - name: Compile Code
-        run: dbt compile --profiles-dir .
+        run: dbt compile --profiles-dir . --target prod
         
       - name: Run Modified Models Only
-        run: dbt run --select state:modified --profiles-dir .
+        run: dbt run --select state:modified --profiles-dir . --target prod
 
       - name: Enforce Standards (dbt-project-evaluator)
         run: dbt run --select package:dbt_project_evaluator --profiles-dir .

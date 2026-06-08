@@ -3,16 +3,24 @@ version: 2
 snapshots:
   - name: scd_customer
     description: "SCD Type 2 Snapshot tracking historical changes to customers."
+    config:
+      target_schema: "{{ 'snapshots' if target.name == 'prod' else target.schema ~ '_snapshots' }}"
     columns:
       - name: c_custkey
         description: "Primary key."
+
   - name: scd_part
     description: "SCD Type 2 Snapshot tracking historical changes to parts."
+    config:
+      target_schema: "{{ 'snapshots' if target.name == 'prod' else target.schema ~ '_snapshots' }}"
     columns:
       - name: p_partkey
         description: "Primary key."
+
   - name: scd_supplier
     description: "SCD Type 2 Snapshot tracking historical changes to suppliers."
+    config:
+      target_schema: "{{ 'snapshots' if target.name == 'prod' else target.schema ~ '_snapshots' }}"
     columns:
       - name: s_suppkey
         description: "Primary key."

@@ -1,7 +1,19 @@
 tpch_star_schema:
+  target: dev
   outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}"
+      user: "{{ env_var('DBT_SNOWFLAKE_USER') }}"
+      password: "{{ env_var('DBT_SNOWFLAKE_PASSWORD') }}"
+      role: "{{ env_var('DBT_SNOWFLAKE_ROLE') }}"
+      warehouse: "{{ env_var('DBT_SNOWFLAKE_WAREHOUSE') }}"
+      database: "{{ env_var('DBT_SNOWFLAKE_DATABASE') }}"
+      schema: "{{ env_var('DBT_DEV_SNOWFLAKE_SCHEMA') }}"
+      threads: 4
+
     prod:
-      type: snowflake # <-- This tells dbt which database engine to use
+      type: snowflake
       account: "{{ env_var('DBT_SNOWFLAKE_ACCOUNT') }}"
       user: "{{ env_var('DBT_SNOWFLAKE_USER') }}"
       password: "{{ env_var('DBT_SNOWFLAKE_PASSWORD') }}"
@@ -10,4 +22,3 @@ tpch_star_schema:
       database: "{{ env_var('DBT_SNOWFLAKE_DATABASE') }}"
       schema: "{{ env_var('DBT_SNOWFLAKE_SCHEMA') }}"
       threads: 4
-  target: prod

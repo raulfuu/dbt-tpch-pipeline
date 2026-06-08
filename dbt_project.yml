@@ -29,5 +29,10 @@ models:
   tpch_star_schema:
     # Individual model materializations (view, ephemeral, table) are configured inside the .sql files themselves
 
+    +post-hook:
+        - "{% if target.name == 'prod' %} grant select on {{ this }} to role reporter_role {% else %} select 1 {% endif %}"
+
   elementary:
+    +schema: observability
+  dbt_project_evaluator:
     +schema: observability

@@ -1,5 +1,7 @@
 {{ config(
-    materialized='table'
+    materialized='table',
+    pre_hook="alter warehouse compute_wh set warehouse_size = 'LARGE'",
+    post_hook="alter warehouse compute_wh set warehouse_size = 'XSMALL'"
 ) }}
 
 with sales_prep as (

@@ -35,10 +35,10 @@ jobs:
         run: dbt deps
 
       - name: Run Snapshots
-        run: dbt snapshot --profiles-dir .
+        run: dbt snapshot --profiles-dir . --target prod
         
       - name: Build Staging Layer
-        run: dbt build --select "stg_*" --profiles-dir .
+        run: dbt build --select "stg_*" --profiles-dir . --target prod
 
   # Job Intermediate Layer
   intermediate-job:

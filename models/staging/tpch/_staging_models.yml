@@ -29,8 +29,9 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('stg_tpch__region')
-              field: region_id
+              arguments:
+                to: ref('stg_tpch__region')
+                field: region_id
       - name: comment
         description: "Standard TPC-H comment field."
 
@@ -51,8 +52,9 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('stg_tpch__nation')
-              field: nation_id
+              arguments:
+                to: ref('stg_tpch__nation')
+                field: nation_id
       - name: phone_number
         description: "Supplier contact phone number."
       - name: account_balance
@@ -93,15 +95,17 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('stg_tpch__part')
-              field: part_id
+              arguments:
+                to: ref('stg_tpch__part')
+                field: part_id
       - name: supplier_id
         description: "Foreign key to supplier."
         tests:
           - not_null
           - relationships:
-              to: ref('stg_tpch__supplier')
-              field: supplier_id
+              arguments:
+                to: ref('stg_tpch__supplier')
+                field: supplier_id
       - name: available_quantity
         description: "Quantity available from this specific supplier."
       - name: supply_cost
@@ -126,8 +130,9 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('stg_tpch__nation')
-              field: nation_id
+              arguments:
+                to: ref('stg_tpch__nation')
+                field: nation_id
       - name: phone_number
         description: "Customer contact phone number."
       - name: account_balance
@@ -150,8 +155,9 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('stg_tpch__customer')
-              field: customer_id
+              arguments:
+                to: ref('stg_tpch__customer')
+                field: customer_id
       - name: order_status
         description: "Current fulfillment status."
       - name: total_price
@@ -175,22 +181,25 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('stg_tpch__orders')
-              field: order_id
+              arguments:
+                to: ref('stg_tpch__orders')
+                field: order_id
       - name: part_id
         description: "Foreign key to part."
         tests:
           - not_null
           - relationships:
-              to: ref('stg_tpch__part')
-              field: part_id
+              arguments:
+                to: ref('stg_tpch__part')
+                field: part_id
       - name: supplier_id
         description: "Foreign key to supplier."
         tests:
           - not_null
           - relationships:
-              to: ref('stg_tpch__supplier')
-              field: supplier_id
+              arguments:
+                to: ref('stg_tpch__supplier')
+                field: supplier_id
       - name: line_number
         description: "Line number within the order."
         tests:
