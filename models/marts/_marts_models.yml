@@ -114,3 +114,28 @@ models:
         description: "Total cost of goods sold based on supply cost."
       - name: net_profit
         description: "Calculated profit as net revenue minus total cost."
+
+exposures:
+  - name: executive_sales_dashboard
+    label: "Executive Sales Dashboard (Looker)"
+    type: dashboard
+    url: "https://lookerstudio.google.com/"
+    description: "Primary Looker Studio dashboard consumed by the C-Suite. Tracks gross revenue, COGS, and net profit margins."
+    depends_on:
+      - ref('fct_sales')
+      - ref('dim_customers')
+    owner:
+      name: "Data Analytics Team"
+      email: "analytics@company.com"
+
+  - name: pricing_anomaly_app
+    label: "Pricing Anomaly Detector (Streamlit)"
+    type: application
+    url: "https://share.streamlit.io/"
+    description: "Interactive Streamlit web application used by Data Science to detect historical pricing anomalies and margin erosion."
+    depends_on:
+      - ref('fct_sales')
+      - ref('dim_parts')
+    owner:
+      name: "Data Science Team"
+      email: "data_science@company.com"
