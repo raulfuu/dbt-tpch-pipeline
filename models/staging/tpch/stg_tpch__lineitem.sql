@@ -36,3 +36,5 @@ renamed as (
 )
 
 select * from renamed
+
+{{ limit_data_in_dev(1000) }}
