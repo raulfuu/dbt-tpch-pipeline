@@ -1,5 +1,5 @@
 tpch_star_schema:
-  target: dev
+  target: dev #
   outputs:
     dev:
       type: snowflake
