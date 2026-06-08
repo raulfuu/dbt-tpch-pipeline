@@ -23,6 +23,10 @@ models:
         description: "Customer's nation."
       - name: region_name
         description: "Customer's region."
+      - name: segment_manager
+        description: "The name of the executive responsible for managing this customer's market segment. Sourced from the segment_managers seed file."
+      - name: profit_target
+        description: "The annual profit target assigned to this customer's market segment. Sourced from the segment_managers seed file."
 
   - name: dim_suppliers
     description: "Type 1 Dimension for supplier data."

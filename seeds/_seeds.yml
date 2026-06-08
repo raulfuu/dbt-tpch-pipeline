@@ -1,0 +1,15 @@
+version: 2
+
+seeds:
+  - name: segment_managers
+    description: "Static mapping file containing the assigned business managers and profit targets for each TPC-H market segment."
+    columns:
+      - name: market_segment
+        description: "The TPC-H market segment category."
+        tests:
+          - unique
+          - not_null
+      - name: segment_manager
+        description: "The name of the executive responsible for this segment."
+      - name: profit_target
+        description: "The annual profit target for the segment."
