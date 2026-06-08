@@ -118,6 +118,10 @@ models:
         description: "Total cost of goods sold based on supply cost."
       - name: net_profit
         description: "Calculated profit as net revenue minus total cost."
+      - name: _loaded_at
+        description: "Audit metadata: The exact timestamp when this row was materialized by Snowflake."
+      - name: _dbt_invocation_id
+        description: "Audit metadata: The unique dbt execution ID that processed this pipeline run. Used for traceability."
 
 exposures:
   - name: executive_sales_dashboard

@@ -25,11 +25,14 @@ final as (
         
         -- Revenue metrics
         sum(extended_price * (1 - discount)) as discounted_amount,
-        sum(extended_price * (1 - discount) * (1 + tax)) as net_amount_with_tax,
+        sum({{ calc_net_amount('extended_price', 'discount', 'tax') }}) as net_amount_with_tax,
         
         -- Cost and Profitability metrics
         sum(quantity * supply_cost) as total_cost,
-        sum(extended_price * (1 - discount) * (1 + tax)) - sum(quantity * supply_cost) as net_profit
+        sum({{ calc_net_amount('extended_price', 'discount', 'tax') }}) - sum(quantity * supply_cost) as net_profit,
+
+        -- Audit Metadata
+        {{ add_audit_columns() }}
         
     from sales_prep
     group by 
