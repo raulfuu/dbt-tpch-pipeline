@@ -85,7 +85,7 @@ final as (
         -- Audit Metadata
         
     current_timestamp() as _loaded_at,
-    'ba412196-b24c-4834-9708-e69e47369c62' as _dbt_invocation_id
+    '15c4d6b0-549d-42ef-b204-46419bb3628b' as _dbt_invocation_id
 
         
     from sales_prep
