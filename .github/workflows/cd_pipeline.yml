@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+  # schedule:
+  #   # Runs automatically every day at 2:00 AM UTC
+  #   - cron: '0 2 * * *'
+
 env:
   DBT_SNOWFLAKE_ACCOUNT: ${{ secrets.DBT_SNOWFLAKE_ACCOUNT }}
   DBT_SNOWFLAKE_USER: ${{ secrets.DBT_SNOWFLAKE_USER }}
