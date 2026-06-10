@@ -20,25 +20,42 @@ jobs:
       DBT_DEV_SNOWFLAKE_SCHEMA: ${{ secrets.DBT_DEV_SNOWFLAKE_SCHEMA }}
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+
+      # Checkout Main
+      - name: Checkout Main Branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
       - name: Install dbt-snowflake
         run: pip install dbt-snowflake
 
-      - name: Install dbt Packages
-        run: dbt deps
+      - name: Install dbt Packages, Compile Code & Generate Baseline Manifest
+        run: |
+          dbt deps
+          dbt compile --profiles-dir . --target prod
+          mkdir -p state
+          cp target/manifest.json state/
 
-      - name: Compile Code
-        run: dbt compile --profiles-dir . --target prod
-        
+      # Checkout PR branch
+      - name: Checkout PR Branch
+        uses: actions/checkout@v4
+        with:
+          clean: false 
+
+      - name: Compile PR Code
+        run: |
+          dbt deps
+          dbt compile --profiles-dir . --target prod
+
+      # Run modified models only, using the baseline manifest for state comparison
       - name: Run Modified Models Only
-        run: dbt run --select state:modified --profiles-dir . --target prod
+        run: dbt run --select state:modified --state ./state --profiles-dir . --target prod
 
       - name: Enforce Standards (dbt-project-evaluator)
-        run: dbt run --select package:dbt_project_evaluator --profiles-dir .
+        run: dbt run --select package:dbt_project_evaluator --profiles-dir . --target prod
