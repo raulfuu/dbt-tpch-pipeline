@@ -130,14 +130,14 @@ exposures:
   - name: executive_sales_dashboard
     label: "Executive Sales Dashboard (Looker)"
     type: dashboard
-    url: "https://lookerstudio.google.com/"
+    url: "https://datastudio.google.com/reporting/5e7dcd01-1d2d-4ed9-b307-84ccf66daa52/page/0As0F"
     description: "Primary Looker Studio dashboard consumed by the C-Suite. Tracks gross revenue, COGS, and net profit margins."
     depends_on:
       - ref('fct_sales')
       - ref('dim_customers')
     owner:
       name: "Data Analytics Team"
-      email: "analytics@company.com"
+      email: "raul.fuente@sdggroup.com"
 
   - name: pricing_anomaly_app
     label: "Pricing Anomaly Detector (Streamlit)"
@@ -149,4 +149,4 @@ exposures:
       - ref('dim_parts')
     owner:
       name: "Data Science Team"
-      email: "data_science@company.com"
+      email: "raul.fuente@sdggroup.com"
