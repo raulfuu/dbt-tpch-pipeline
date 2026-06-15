@@ -20,7 +20,6 @@ jobs:
       DBT_DEV_SNOWFLAKE_SCHEMA: ${{ secrets.DBT_DEV_SNOWFLAKE_SCHEMA }}
 
     steps:
-
       # Checkout Main
       - name: Checkout Main Branch
         uses: actions/checkout@v4
@@ -35,7 +34,7 @@ jobs:
       - name: Install dbt-snowflake
         run: pip install dbt-snowflake
 
-      - name: Install dbt Packages, Compile Code & Generate Baseline Manifest
+      - name: Generate Baseline Manifest
         run: |
           dbt deps
           dbt compile --profiles-dir . --target prod
@@ -52,6 +51,9 @@ jobs:
         run: |
           dbt deps
           dbt compile --profiles-dir . --target prod
+
+      - name: Initialize Elementary Observability
+        run: dbt run --select elementary --profiles-dir . --target prod
 
       # Run modified models only, using the baseline manifest for state comparison
       - name: Run Modified Models Only
