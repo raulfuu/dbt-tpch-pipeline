@@ -39,6 +39,9 @@ jobs:
       - name: Install Packages
         run: dbt deps
 
+      - name: Initialize Elementary Observability
+        run: dbt run --select elementary --profiles-dir . --target prod
+
       - name: Run Snapshots
         run: dbt snapshot --profiles-dir . --target prod
         
@@ -65,7 +68,7 @@ jobs:
         run: dbt deps
 
       - name: Build Intermediate Layer
-        run: dbt build --select "int_*" --profiles-dir .
+        run: dbt build --select "int_*" --profiles-dir . --target prod
 
   # Job Marts Layer
   marts-job:
@@ -87,7 +90,7 @@ jobs:
         run: dbt deps
 
       - name: Build Marts Layer
-        run: dbt build --select "dim_* fct_*" --profiles-dir .
+        run: dbt build --select "dim_* fct_*" --profiles-dir . --target prod
 
   # Documentation Generation Job
   docs-job:
