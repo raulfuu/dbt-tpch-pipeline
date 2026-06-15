@@ -46,7 +46,7 @@ jobs:
         run: dbt snapshot --profiles-dir . --target prod
         
       - name: Build Staging Layer
-        run: dbt build --select "stg_*" --profiles-dir . --target prod
+        run: dbt build --select models/staging --profiles-dir . --target prod
 
   # Job Intermediate Layer
   intermediate-job:
@@ -68,7 +68,7 @@ jobs:
         run: dbt deps
 
       - name: Build Intermediate Layer
-        run: dbt build --select "int_*" --profiles-dir . --target prod
+        run: dbt build --select models/intermediate --profiles-dir . --target prod
 
   # Job Marts Layer
   marts-job:
@@ -90,7 +90,7 @@ jobs:
         run: dbt deps
 
       - name: Build Marts Layer
-        run: dbt build --select "dim_* fct_*" --profiles-dir . --target prod
+        run: dbt build --select models/marts --profiles-dir . --target prod
 
   # Documentation Generation Job
   docs-job:
