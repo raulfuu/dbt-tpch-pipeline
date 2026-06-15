@@ -4,6 +4,9 @@ with source as (
     select * from snowflake_sample_data.tpch_sf1.orders
     
     
+    -- Dynamically filter for only new or updated orders
+    where o_orderdate >= (select max(order_date) from TPCH_ANALYTICS.PUBLIC.stg_tpch__orders)
+    
 ),
 
 renamed as (

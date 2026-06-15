@@ -4,6 +4,9 @@ with source as (
     select * from snowflake_sample_data.tpch_sf1.lineitem
     
     
+    -- Dynamically filter for only new or updated rows using the target table's max date
+    where l_shipdate >= (select max(ship_date) from TPCH_ANALYTICS.PUBLIC.stg_tpch__lineitem)
+    
 ),
 
 renamed as (
