@@ -36,3 +36,9 @@ models:
     +schema: observability
   dbt_project_evaluator:
     +schema: observability
+
+
+vars:
+  dbt_project_evaluator:
+    # Ignore external packages - Elementary or dbt_utils packages
+    exclude_packages: ["all"] 

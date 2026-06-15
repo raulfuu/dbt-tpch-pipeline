@@ -47,6 +47,11 @@ models:
 
   - name: int_sales_prep
     description: "Ephemeral model joining order headers with line items to prepare fact table grain."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - order_id
+            - line_number
     columns:
       - name: order_id
         description: "Foreign key to the order."

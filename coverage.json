@@ -1,323 +1,10 @@
 {
   "cov_type": "doc",
-  "hits": 98,
-  "covered": 98,
-  "total": 192,
-  "coverage": 0.5104166666666666,
+  "hits": 176,
+  "covered": 176,
+  "total": 693,
+  "coverage": 0.25396825396825395,
   "tables": [
-    {
-      "name": "tpch_sf1.supplier",
-      "hits": 0,
-      "covered": 0,
-      "total": 7,
-      "coverage": 0.0,
-      "columns": [
-        {
-          "name": "s_suppkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "s_name",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "s_address",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "s_nationkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "s_phone",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "s_acctbal",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "s_comment",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        }
-      ]
-    },
-    {
-      "name": "tpch_sf1.region",
-      "hits": 0,
-      "covered": 0,
-      "total": 3,
-      "coverage": 0.0,
-      "columns": [
-        {
-          "name": "r_regionkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "r_name",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "r_comment",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        }
-      ]
-    },
-    {
-      "name": "tpch_sf1.part",
-      "hits": 0,
-      "covered": 0,
-      "total": 9,
-      "coverage": 0.0,
-      "columns": [
-        {
-          "name": "p_partkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "p_name",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "p_mfgr",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "p_brand",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "p_type",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "p_size",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "p_container",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "p_retailprice",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "p_comment",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        }
-      ]
-    },
-    {
-      "name": "tpch_sf1.orders",
-      "hits": 0,
-      "covered": 0,
-      "total": 9,
-      "coverage": 0.0,
-      "columns": [
-        {
-          "name": "o_orderkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "o_custkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "o_orderstatus",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "o_totalprice",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "o_orderdate",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "o_orderpriority",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "o_clerk",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "o_shippriority",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "o_comment",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        }
-      ]
-    },
-    {
-      "name": "tpch_sf1.nation",
-      "hits": 0,
-      "covered": 0,
-      "total": 4,
-      "coverage": 0.0,
-      "columns": [
-        {
-          "name": "n_nationkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "n_name",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "n_regionkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "n_comment",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        }
-      ]
-    },
-    {
-      "name": "tpch_sf1.partsupp",
-      "hits": 0,
-      "covered": 0,
-      "total": 5,
-      "coverage": 0.0,
-      "columns": [
-        {
-          "name": "ps_partkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "ps_suppkey",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "ps_availqty",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "ps_supplycost",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "ps_comment",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        }
-      ]
-    },
     {
       "name": "tpch_sf1.lineitem",
       "hits": 0,
@@ -440,6 +127,115 @@
       ]
     },
     {
+      "name": "tpch_sf1.part",
+      "hits": 0,
+      "covered": 0,
+      "total": 9,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "p_partkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_mfgr",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_brand",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_size",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_container",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_retailprice",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_comment",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "tpch_sf1.nation",
+      "hits": 0,
+      "covered": 0,
+      "total": 4,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "n_nationkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "n_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "n_regionkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "n_comment",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
       "name": "tpch_sf1.customer",
       "hits": 0,
       "covered": 0,
@@ -505,7 +301,1676 @@
       ]
     },
     {
-      "name": "public.dim_customers",
+      "name": "tpch_sf1.region",
+      "hits": 0,
+      "covered": 0,
+      "total": 3,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "r_regionkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "r_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "r_comment",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "tpch_sf1.supplier",
+      "hits": 0,
+      "covered": 0,
+      "total": 7,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "s_suppkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "s_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "s_address",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "s_nationkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "s_phone",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "s_acctbal",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "s_comment",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "tpch_sf1.partsupp",
+      "hits": 0,
+      "covered": 0,
+      "total": 5,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "ps_partkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "ps_suppkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "ps_availqty",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "ps_supplycost",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "ps_comment",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "tpch_sf1.orders",
+      "hits": 0,
+      "covered": 0,
+      "total": 9,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "o_orderkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "o_custkey",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "o_orderstatus",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "o_totalprice",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "o_orderdate",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "o_orderpriority",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "o_clerk",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "o_shippriority",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "o_comment",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.anomaly_threshold_sensitivity",
+      "hits": 0,
+      "covered": 0,
+      "total": 14,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "full_table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "latest_metric_value",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_avg",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_stddev",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "anomaly_score",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_anomaly_1_5",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_anomaly_2",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_anomaly_2_5",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_anomaly_3",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_anomaly_3_5",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_anomaly_4",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_anomaly_4_5",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.monitors_runs",
+      "hits": 0,
+      "covered": 0,
+      "total": 6,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "full_table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_properties",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "last_bucket_end",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "first_bucket_end",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.fct_sales",
+      "hits": 15,
+      "covered": 15,
+      "total": 15,
+      "coverage": 1.0,
+      "columns": [
+        {
+          "name": "order_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "customer_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "part_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "supplier_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "order_date",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "order_status",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "total_line_items",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "total_quantity",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "gross_amount",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "discounted_amount",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "net_amount_with_tax",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "total_cost",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "net_profit",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "_loaded_at",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "_dbt_invocation_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.stg_tpch__nation",
+      "hits": 4,
+      "covered": 4,
+      "total": 4,
+      "coverage": 1.0,
+      "columns": [
+        {
+          "name": "nation_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "nation_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "region_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "comment",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.dim_suppliers",
+      "hits": 7,
+      "covered": 7,
+      "total": 7,
+      "coverage": 1.0,
+      "columns": [
+        {
+          "name": "supplier_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "supplier_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "supplier_address",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "phone_number",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "account_balance",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "nation_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "region_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.schema_columns_snapshot",
+      "hits": 0,
+      "covered": 0,
+      "total": 8,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "column_state_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "full_column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "full_table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "data_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_new",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "detected_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "created_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.stg_tpch__supplier",
+      "hits": 7,
+      "covered": 7,
+      "total": 7,
+      "coverage": 1.0,
+      "columns": [
+        {
+          "name": "supplier_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "supplier_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "supplier_address",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "nation_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "phone_number",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "account_balance",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "comment",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.alerts_dbt_source_freshness",
+      "hits": 0,
+      "covered": 0,
+      "total": 23,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "alert_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "max_loaded_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "snapshotted_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "detected_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "max_loaded_at_time_ago_in_s",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "error",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "warn_after",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "error_after",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "filter",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "source_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "identifier",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "meta",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "package_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "freshness_error_after",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "freshness_warn_after",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "freshness_filter",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.alerts_dbt_models",
+      "hits": 0,
+      "covered": 0,
+      "total": 14,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "alert_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "detected_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "materialization",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "original_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "message",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owners",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alias",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "full_refresh",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.job_run_results",
+      "hits": 0,
+      "covered": 0,
+      "total": 6,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "run_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "run_started_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "run_completed_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "run_execution_time",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.data_monitoring_metrics",
+      "hits": 0,
+      "covered": 0,
+      "total": 15,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "full_table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_value",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "source_value",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "bucket_start",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "bucket_end",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "bucket_duration_hours",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "updated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dimension",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dimension_value",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_properties",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "created_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.stg_tpch__part",
+      "hits": 9,
+      "covered": 9,
+      "total": 9,
+      "coverage": 1.0,
+      "columns": [
+        {
+          "name": "part_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "part_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "manufacturer",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "brand",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "part_type",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "part_size",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "container",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "retail_price",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "comment",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_sources",
+      "hits": 0,
+      "covered": 0,
+      "total": 22,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "source_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "identifier",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "loaded_at_field",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "freshness_warn_after",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "freshness_error_after",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "freshness_filter",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "freshness_description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "relation_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "meta",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "package_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "original_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "source_description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metadata_hash",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_exposures",
+      "hits": 0,
+      "covered": 0,
+      "total": 20,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "maturity",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner_email",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "url",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "depends_on_macros",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "depends_on_nodes",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "depends_on_columns",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "meta",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "package_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "original_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metadata_hash",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "label",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "raw_queries",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_metrics",
+      "hits": 0,
+      "covered": 0,
+      "total": 20,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "label",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "model",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "sql",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "timestamp",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "filters",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "time_grains",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dimensions",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "depends_on_macros",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "depends_on_nodes",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "meta",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "package_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "original_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metadata_hash",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.stg_tpch__customer",
       "hits": 8,
       "covered": 8,
       "total": 8,
@@ -533,6 +1998,13 @@
           "coverage": 1.0
         },
         {
+          "name": "nation_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
           "name": "phone_number",
           "hits": 1,
           "covered": 1,
@@ -554,14 +2026,7 @@
           "coverage": 1.0
         },
         {
-          "name": "nation_name",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "region_name",
+          "name": "comment",
           "hits": 1,
           "covered": 1,
           "total": 1,
@@ -570,7 +2035,312 @@
       ]
     },
     {
-      "name": "public.stg_tpch__lineitem",
+      "name": "dev_public_observability.dbt_snapshots",
+      "hits": 0,
+      "covered": 0,
+      "total": 19,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alias",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "checksum",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "materialization",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "meta",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "depends_on_macros",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "depends_on_nodes",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "package_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "original_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "patch_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metadata_hash",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_run_results",
+      "hits": 18,
+      "covered": 18,
+      "total": 22,
+      "coverage": 0.8181818181818182,
+      "columns": [
+        {
+          "name": "model_execution_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "unique_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "invocation_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "created_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "message",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "status",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "resource_type",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "execution_time",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "execute_started_at",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "execute_completed_at",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "compile_started_at",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "compile_completed_at",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "rows_affected",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "full_refresh",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "compiled_code",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "failures",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "query_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "thread_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "materialization",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "adapter_response",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.stg_tpch__lineitem",
       "hits": 16,
       "covered": 16,
       "total": 16,
@@ -691,7 +2461,2281 @@
       ]
     },
     {
-      "name": "public.stg_tpch__orders",
+      "name": "dev_public.stg_tpch__region",
+      "hits": 3,
+      "covered": 3,
+      "total": 3,
+      "coverage": 1.0,
+      "columns": [
+        {
+          "name": "region_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "region_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "comment",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_tests",
+      "hits": 5,
+      "covered": 5,
+      "total": 28,
+      "coverage": 0.17857142857142858,
+      "columns": [
+        {
+          "name": "unique_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "database_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "short_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alias",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_column_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "severity",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "warn_if",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "error_if",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_params",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_namespace",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_original_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "model_tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "model_owners",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "meta",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "depends_on_macros",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "depends_on_nodes",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "parent_model_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "package_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "original_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metadata_hash",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "quality_dimension",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_invocations",
+      "hits": 30,
+      "covered": 30,
+      "total": 35,
+      "coverage": 0.8571428571428571,
+      "columns": [
+        {
+          "name": "invocation_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "job_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "job_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "job_run_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "run_started_at",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "run_completed_at",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "created_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "command",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "dbt_version",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "elementary_version",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "full_refresh",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "invocation_vars",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "vars",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "target_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "target_database",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "target_schema",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "target_profile_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "threads",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "selected",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "yaml_selector",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "project_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "project_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "env",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "env_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "cause_category",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "cause",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "pull_request_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "git_sha",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "orchestrator",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "dbt_user",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "job_url",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "job_run_url",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "account_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "target_adapter_specific_fields",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_artifacts_hashes",
+      "hits": 0,
+      "covered": 0,
+      "total": 2,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "artifacts_model",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metadata_hash",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.dim_parts",
+      "hits": 8,
+      "covered": 8,
+      "total": 8,
+      "coverage": 1.0,
+      "columns": [
+        {
+          "name": "part_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "part_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "manufacturer",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "brand",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "part_type",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "part_size",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "container",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "retail_price",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_columns",
+      "hits": 0,
+      "covered": 0,
+      "total": 13,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "parent_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "data_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "meta",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "resource_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metadata_hash",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.metadata",
+      "hits": 0,
+      "covered": 0,
+      "total": 1,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "dbt_pkg_version",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_models",
+      "hits": 16,
+      "covered": 16,
+      "total": 19,
+      "coverage": 0.8421052631578947,
+      "columns": [
+        {
+          "name": "unique_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "alias",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "checksum",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "materialization",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "tags",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "meta",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "owner",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "database_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "depends_on_macros",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "depends_on_nodes",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "description",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "package_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "original_path",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "path",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "patch_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "metadata_hash",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.model_run_results",
+      "hits": 0,
+      "covered": 0,
+      "total": 29,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "model_execution_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "invocation_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "query_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "full_refresh",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "message",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "execution_time",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "execute_started_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "execute_completed_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "compile_started_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "compile_completed_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "compiled_code",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "adapter_response",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "thread_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "materialization",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "package_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "original_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alias",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "model_invocation_reverse_index",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_the_first_invocation_of_the_day",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_the_last_invocation_of_the_day",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_source_freshness_results",
+      "hits": 0,
+      "covered": 0,
+      "total": 17,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "source_freshness_execution_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "max_loaded_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "snapshotted_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "created_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "max_loaded_at_time_ago_in_s",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "error",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "compile_started_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "compile_completed_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "execute_started_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "execute_completed_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "invocation_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "warn_after",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "error_after",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "filter",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.snapshot_run_results",
+      "hits": 0,
+      "covered": 0,
+      "total": 26,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "model_execution_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "invocation_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "query_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "full_refresh",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "message",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "execution_time",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "execute_started_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "execute_completed_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "compile_started_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "compile_completed_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "compiled_code",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "adapter_response",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "thread_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "materialization",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "package_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "original_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alias",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.dbt_seeds",
+      "hits": 0,
+      "covered": 0,
+      "total": 15,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alias",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "checksum",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "meta",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owner",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "package_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "original_path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "path",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "generated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metadata_hash",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.alerts_schema_changes",
+      "hits": 0,
+      "covered": 0,
+      "total": 23,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "alert_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "data_issue_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_execution_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "model_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "detected_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alert_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "sub_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alert_description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owners",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alert_results_query",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "other",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_short_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_params",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "severity",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "result_rows",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.alerts_anomaly_detection",
+      "hits": 0,
+      "covered": 0,
+      "total": 23,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "alert_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "data_issue_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_execution_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "model_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "detected_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alert_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "sub_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alert_description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owners",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alert_results_query",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "other",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_short_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_params",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "severity",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "result_rows",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.alerts_dbt_tests",
+      "hits": 0,
+      "covered": 0,
+      "total": 23,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "alert_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "data_issue_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_execution_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "model_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "detected_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alert_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "sub_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alert_description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owners",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "alert_results_query",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "other",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_short_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_params",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "severity",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "result_rows",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.dim_customers",
+      "hits": 10,
+      "covered": 10,
+      "total": 10,
+      "coverage": 1.0,
+      "columns": [
+        {
+          "name": "customer_id",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "customer_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "customer_address",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "phone_number",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "account_balance",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "market_segment",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "nation_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "region_name",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "segment_manager",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "profit_target",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_observability.elementary_test_results",
+      "hits": 0,
+      "covered": 0,
+      "total": 28,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "data_issue_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_execution_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "model_unique_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "invocation_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "detected_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "created_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "database_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "schema_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_sub_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_results_description",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "owners",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "tags",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_results_query",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "other",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_params",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "severity",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "status",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "failures",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_short_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "test_alias",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "result_rows",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "failed_row_count",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.stg_tpch__orders",
       "hits": 9,
       "covered": 9,
       "total": 9,
@@ -763,93 +4807,172 @@
       ]
     },
     {
-      "name": "public.fct_sales",
-      "hits": 11,
-      "covered": 11,
-      "total": 11,
-      "coverage": 1.0,
+      "name": "dev_public_observability.test_result_rows",
+      "hits": 0,
+      "covered": 0,
+      "total": 4,
+      "coverage": 0.0,
       "columns": [
         {
-          "name": "order_id",
-          "hits": 1,
-          "covered": 1,
+          "name": "elementary_test_results_id",
+          "hits": 0,
+          "covered": 0,
           "total": 1,
-          "coverage": 1.0
+          "coverage": 0.0
         },
         {
-          "name": "customer_id",
-          "hits": 1,
-          "covered": 1,
+          "name": "result_row",
+          "hits": 0,
+          "covered": 0,
           "total": 1,
-          "coverage": 1.0
+          "coverage": 0.0
         },
         {
-          "name": "part_id",
-          "hits": 1,
-          "covered": 1,
+          "name": "detected_at",
+          "hits": 0,
+          "covered": 0,
           "total": 1,
-          "coverage": 1.0
+          "coverage": 0.0
         },
         {
-          "name": "supplier_id",
-          "hits": 1,
-          "covered": 1,
+          "name": "created_at",
+          "hits": 0,
+          "covered": 0,
           "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "order_date",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "order_status",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "total_line_items",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "total_quantity",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "gross_amount",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "discounted_amount",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "net_amount_with_tax",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
+          "coverage": 0.0
         }
       ]
     },
     {
-      "name": "public.stg_tpch__partsupp",
+      "name": "dev_public_observability.metrics_anomaly_score",
+      "hits": 0,
+      "covered": 0,
+      "total": 17,
+      "coverage": 0.0,
+      "columns": [
+        {
+          "name": "id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "full_table_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "column_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dimension",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dimension_value",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "metric_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "anomaly_score",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "latest_metric_value",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "bucket_start",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "bucket_end",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "training_avg",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "training_stddev",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "training_start",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "training_end",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "training_set_size",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "updated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "is_anomaly",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public.stg_tpch__partsupp",
       "hits": 5,
       "covered": 5,
       "total": 5,
@@ -893,223 +5016,28 @@
       ]
     },
     {
-      "name": "public.stg_tpch__customer",
-      "hits": 8,
-      "covered": 8,
-      "total": 8,
-      "coverage": 1.0,
-      "columns": [
-        {
-          "name": "customer_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "customer_name",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "customer_address",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "nation_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "phone_number",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "account_balance",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "market_segment",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "comment",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        }
-      ]
-    },
-    {
-      "name": "public.stg_tpch__part",
-      "hits": 9,
-      "covered": 9,
-      "total": 9,
-      "coverage": 1.0,
-      "columns": [
-        {
-          "name": "part_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "part_name",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "manufacturer",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "brand",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "part_type",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "part_size",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "container",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "retail_price",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "comment",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        }
-      ]
-    },
-    {
-      "name": "public.stg_tpch__region",
+      "name": "dev_public.segment_managers",
       "hits": 3,
       "covered": 3,
       "total": 3,
       "coverage": 1.0,
       "columns": [
         {
-          "name": "region_id",
+          "name": "market_segment",
           "hits": 1,
           "covered": 1,
           "total": 1,
           "coverage": 1.0
         },
         {
-          "name": "region_name",
+          "name": "segment_manager",
           "hits": 1,
           "covered": 1,
           "total": 1,
           "coverage": 1.0
         },
         {
-          "name": "comment",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        }
-      ]
-    },
-    {
-      "name": "public.dim_suppliers",
-      "hits": 7,
-      "covered": 7,
-      "total": 7,
-      "coverage": 1.0,
-      "columns": [
-        {
-          "name": "supplier_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "supplier_name",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "supplier_address",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "phone_number",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "account_balance",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "nation_name",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "region_name",
+          "name": "profit_target",
           "hits": 1,
           "covered": 1,
           "total": 1,
@@ -1118,316 +5046,56 @@
       ]
     },
     {
-      "name": "public.stg_tpch__nation",
-      "hits": 4,
-      "covered": 4,
-      "total": 4,
-      "coverage": 1.0,
-      "columns": [
-        {
-          "name": "nation_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "nation_name",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "region_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "comment",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        }
-      ]
-    },
-    {
-      "name": "public.stg_tpch__supplier",
-      "hits": 7,
-      "covered": 7,
-      "total": 7,
-      "coverage": 1.0,
-      "columns": [
-        {
-          "name": "supplier_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "supplier_name",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "supplier_address",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "nation_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "phone_number",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "account_balance",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "comment",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        }
-      ]
-    },
-    {
-      "name": "public.dim_parts",
-      "hits": 8,
-      "covered": 8,
-      "total": 8,
-      "coverage": 1.0,
-      "columns": [
-        {
-          "name": "part_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "part_name",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "manufacturer",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "brand",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "part_type",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "part_size",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "container",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "retail_price",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        }
-      ]
-    },
-    {
-      "name": "snapshots.scd_part",
-      "hits": 1,
-      "covered": 1,
-      "total": 13,
-      "coverage": 0.07692307692307693,
-      "columns": [
-        {
-          "name": "part_id",
-          "hits": 1,
-          "covered": 1,
-          "total": 1,
-          "coverage": 1.0
-        },
-        {
-          "name": "part_name",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "manufacturer",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "brand",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "part_type",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "part_size",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "container",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "retail_price",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "comment",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "dbt_scd_id",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "dbt_updated_at",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "dbt_valid_from",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        },
-        {
-          "name": "dbt_valid_to",
-          "hits": 0,
-          "covered": 0,
-          "total": 1,
-          "coverage": 0.0
-        }
-      ]
-    },
-    {
-      "name": "snapshots.scd_supplier",
+      "name": "dev_public_snapshots.scd_supplier",
       "hits": 1,
       "covered": 1,
       "total": 11,
       "coverage": 0.09090909090909091,
       "columns": [
         {
-          "name": "supplier_id",
+          "name": "s_suppkey",
           "hits": 1,
           "covered": 1,
           "total": 1,
           "coverage": 1.0
         },
         {
-          "name": "supplier_name",
+          "name": "s_name",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "supplier_address",
+          "name": "s_address",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "nation_id",
+          "name": "s_nationkey",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "phone_number",
+          "name": "s_phone",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "account_balance",
+          "name": "s_acctbal",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "comment",
+          "name": "s_comment",
           "hits": 0,
           "covered": 0,
           "total": 1,
@@ -1464,63 +5132,163 @@
       ]
     },
     {
-      "name": "snapshots.scd_customer",
+      "name": "dev_public_snapshots.scd_customer",
       "hits": 1,
       "covered": 1,
       "total": 12,
       "coverage": 0.08333333333333333,
       "columns": [
         {
-          "name": "customer_id",
+          "name": "c_custkey",
           "hits": 1,
           "covered": 1,
           "total": 1,
           "coverage": 1.0
         },
         {
-          "name": "customer_name",
+          "name": "c_name",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "customer_address",
+          "name": "c_address",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "nation_id",
+          "name": "c_nationkey",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "phone_number",
+          "name": "c_phone",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "account_balance",
+          "name": "c_acctbal",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "market_segment",
+          "name": "c_mktsegment",
           "hits": 0,
           "covered": 0,
           "total": 1,
           "coverage": 0.0
         },
         {
-          "name": "comment",
+          "name": "c_comment",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dbt_scd_id",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dbt_updated_at",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dbt_valid_from",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "dbt_valid_to",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        }
+      ]
+    },
+    {
+      "name": "dev_public_snapshots.scd_part",
+      "hits": 1,
+      "covered": 1,
+      "total": 13,
+      "coverage": 0.07692307692307693,
+      "columns": [
+        {
+          "name": "p_partkey",
+          "hits": 1,
+          "covered": 1,
+          "total": 1,
+          "coverage": 1.0
+        },
+        {
+          "name": "p_name",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_mfgr",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_brand",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_type",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_size",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_container",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_retailprice",
+          "hits": 0,
+          "covered": 0,
+          "total": 1,
+          "coverage": 0.0
+        },
+        {
+          "name": "p_comment",
           "hits": 0,
           "covered": 0,
           "total": 1,

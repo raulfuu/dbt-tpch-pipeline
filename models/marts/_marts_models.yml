@@ -74,6 +74,12 @@ models:
 
   - name: fct_sales
     description: "Core sales fact table at the line-item grain."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - order_id
+            - part_id
+            - supplier_id
     columns:
       - name: order_id
         description: "Foreign key joining to order."
