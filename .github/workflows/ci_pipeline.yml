@@ -20,6 +20,7 @@ jobs:
       DBT_DEV_SNOWFLAKE_SCHEMA: ${{ secrets.DBT_DEV_SNOWFLAKE_SCHEMA }}
 
     steps:
+      # Checkout Main
       - name: Checkout Main Branch
         uses: actions/checkout@v4
         with:
@@ -40,14 +41,21 @@ jobs:
           mkdir -p state
           cp target/manifest.json state/
 
+      # Checkout PR branch
       - name: Checkout PR Branch
         uses: actions/checkout@v4
         with:
           clean: false 
 
+      - name: Compile PR Code
+        run: |
+          dbt deps
+          dbt compile --profiles-dir . --target prod
+
       - name: Initialize Elementary Observability
         run: dbt run --select elementary --profiles-dir . --target prod
 
+      # Run modified models only, using the baseline manifest for state comparison
       - name: Run Modified Models Only
         run: dbt run --select state:modified --state ./state --profiles-dir . --target prod
 
