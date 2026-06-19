@@ -45,7 +45,7 @@ jobs:
         with:
           clean: false 
 
-      - name: Initialize Elementary Observability
+      - name: Init Elementary Observability
         run: dbt run --select elementary --profiles-dir . --target dev
 
       - name: Run Modified Models Only
