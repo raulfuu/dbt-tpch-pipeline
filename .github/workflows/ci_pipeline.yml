@@ -36,7 +36,7 @@ jobs:
       - name: Generate Baseline Manifest
         run: |
           dbt deps
-          dbt compile --profiles-dir . --target prod
+          dbt compile --profiles-dir . --target dev
           mkdir -p state
           cp target/manifest.json state/
 
@@ -46,10 +46,10 @@ jobs:
           clean: false 
 
       - name: Initialize Elementary Observability
-        run: dbt run --select elementary --profiles-dir . --target prod
+        run: dbt run --select elementary --profiles-dir . --target dev
 
       - name: Run Modified Models Only
-        run: dbt run --select state:modified --state ./state --profiles-dir . --target prod
+        run: dbt build --select state:modified --state ./state --profiles-dir . --target dev
 
       - name: Enforce Standards (dbt-project-evaluator)
-        run: dbt run --select package:dbt_project_evaluator --profiles-dir . --target prod
+        run: dbt run --select package:dbt_project_evaluator --profiles-dir . --target dev
